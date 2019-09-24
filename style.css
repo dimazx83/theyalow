@@ -1,0 +1,33 @@
+header{
+    background: #191003 url('./assets/back1.png') no-repeat top center / cover;
+    /*background-size: 100%;*/
+}
+header section{
+    width: 100%; /*100vw*/
+    height: 100vh;
+    margin: 0 auto;
+}
+h1{
+    color: #ffffff;
+}
+.upper{
+    text-transform: uppercase;
+}
+.nav{
+    width: 600px;
+    /*margin*/
+}
+.nav ul{
+    display: flex;
+    justify-content: space-between;/*на равную длину расположить, поиграть с шириной*/
+
+}
+.nav ul li a{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    background-color: #f5c506;
+    align-items: center;
+    justify-content: center;
+
+}
