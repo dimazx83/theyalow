@@ -95,6 +95,64 @@ header h1 {
     padding-left: 49px;
 }
 
+/* alternate nav with list style
+.nav {
+    width: 454px;
+    height: 42px;
+    margin-top: 70px;
+}
+
+.nav ul {
+    display: flex;
+    background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+    box-shadow: -6px -6px rgba(245, 197, 5, 0.27), -9px -9px 1px rgba(245, 197, 5, 0.27);
+    /* на равную длину расположить, поиграть с шириной
+}
+
+.nav ul a {
+    height: 42px;
+    align-items: center;
+    text-decoration: none;
+    color: #9b7d08;
+    border-left: 1px solid #b99403;
+    margin-top: 15px;
+}
+
+.nav ul a:hover {
+    color: white;
+}
+
+.nav ul a:active {
+    color: red;
+}
+
+.nav ul a li {
+    font-size: 17px;
+    letter-spacing: 0px;
+    font-family: "Segoe WP";
+    box-sizing: border-box;
+}
+
+.nav ul a:first-child {
+    list-style: url(./assets/man.svg) outside;
+    border: none;
+    width: 172px;
+    padding: 0 22px 0 70px;
+}
+
+.nav ul a:nth-child(2) {
+    list-style: url(../assets/key.svg);
+    padding-right: 18px;
+    padding-left: 42px;
+}
+
+.nav ul a:last-child {
+    list-style: url(../assets/mail.svg);
+    padding-right: 22px;
+    padding-left: 49px;
+}
+*/
+
 /***1-1***/
 
 .banner {
@@ -142,6 +200,7 @@ header h1 {
 .wrap .banner video {
     width: 549px;
     height: 327px;
+    box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.75);
 }
 
 .cover {
@@ -516,4 +575,152 @@ footer section h1 {
     font-family: "Lucida Sans";
     font-style: italic;
     text-align: center;
+}
+
+/*****media*****/
+
+@media screen and (max-width: 640px) {
+    .wrap {
+        width: 640px;
+    }
+    header section {
+        height: auto;
+    }
+    .logo {
+        width: 184px;
+        height: 62px;
+        margin-top: 0;
+        background-image: linear-gradient(0deg, #000000 0%, #41413f 100%);
+    }
+    .logo img {
+        width: 41px;
+        height: 41px;
+    }
+    .nav {
+        margin-top: 0;
+        height: auto;
+    }
+    .nav ul {
+        box-shadow: none;
+        height: 62px;
+        align-items: center;
+    }
+    .nav ul a, .logo h1 {
+        font-size: 19px;
+    }
+    .wrap {
+        all: initial;
+    }
+    .wrap .banner {
+        width: 640px;
+        height: 327px;
+    }
+    .wrap .banner video {
+        width: 640px;
+    }
+    .banner h1 {
+        display: none;
+    }
+    .contr {
+        display: none;
+    }
+    /********/
+    .white_inner, .white_inner ul {
+        height: 174px;
+        font-size: 23px;
+    }
+    .white .white_inner .upper li {
+        background-position-y: 28px;
+        padding-bottom: 33px;
+    }
+    .white ul li:nth-child(1) {
+        background-size: 90px 62px;
+    }
+    .white ul li:nth-child(2) {
+        background-size: 67px 70px;
+    }
+    .white ul li:nth-child(3) {
+        background-size: 69px 70px;
+    }
+    /*****/
+    .lorem {
+        background: none;
+    }
+    .lorem_div h1, .range, .date, .twit p, .twit .plus {
+        display: none;
+    }
+    .lorem, .lorem_div .big0 {
+        height: 485px;
+    }
+    .big {
+        margin-top: 0;
+        flex-wrap: wrap;
+    }
+    .text {
+        width: 299px;
+        height: 232px;
+        margin: 9px;
+        margin-top: 11px;
+        margin-right: 4.5px;
+    }
+    .big .vid {
+        width: 299px;
+        margin: 9px;
+        margin-top: 11px;
+        margin-left: 4.5px;
+    }
+    .text div input {
+        right: 12px;
+        bottom: 18px;
+    }
+    .text p {
+        padding: 22px 38px 21px 26px;
+        line-height: 33px;
+    }
+    .twit {
+        width: 647px;
+        background-color: #f5c507;
+        background-position: 25% center;
+    }
+    /*****/
+    .grey {
+        height: 487px;
+    }
+    .grey-div h1 {
+        letter-spacing: 0px;
+        font-family: "Open Sans";
+        font-size: 39px;
+        margin-top: 43px;
+    }
+    .grey-div ul {
+        display: none;
+    }
+    .grey figure {
+        margin-top: 83px;
+        margin-left: 57px;
+    }
+    .grey figure img:nth-child(2) {
+        top: 125px;
+    }
+    .grey figure img:nth-child(3) {
+        top: 235px;
+        left: 558px;
+    }
+    .grey-div .cir {
+        left: 26px;
+        bottom: 278px;
+    }
+    footer {
+        height: 44px;
+    }
+    .logo-foot {
+        margin-left: 64px;
+    }
+    .logo-foot img {
+        width: 31px;
+        height: 31px;
+    }
+    .logo-foot h1 {
+        font-size: 17px;
+    }
 }
