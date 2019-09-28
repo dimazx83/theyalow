@@ -44,8 +44,7 @@ header h1 {
     display: flex;
     background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
     justify-content: space-around;
-    box-shadow: -6px -6px rgba(245, 197, 5, 0.27), -9px -9px 1px rgba(245, 197, 5, 0.27);
-    /* на равную длину расположить, поиграть с шириной*/
+    box-shadow: -6px -6px rgb(245, 197, 6, 0.27), -9px -9px 1px rgba(245, 197, 6, 0.27);
 }
 
 .nav ul a {
@@ -76,13 +75,14 @@ header h1 {
 .nav ul a:first-child {
     background: url(../assets/man.svg) 20px no-repeat;
     background-position-x: 39px;
-    border: none;
+    border: 0;
     width: 172px;
     padding: 0 22px 0 70px;
 }
 
 .nav ul a:nth-child(2) {
     background: url(../assets/key.svg) 20px no-repeat;
+    background-position-x: 13px;
     width: 134px;
     padding-right: 18px;
     padding-left: 42px;
@@ -90,6 +90,7 @@ header h1 {
 
 .nav ul a:last-child {
     background: url(../assets/mail.svg) 20px no-repeat;
+    background-position-x: 16px;
     width: 150px;
     padding-right: 22px;
     padding-left: 49px;
@@ -135,7 +136,7 @@ header h1 {
 
 .nav ul a:first-child {
     list-style: url(./assets/man.svg) outside;
-    border: none;
+    border: 0;
     width: 172px;
     padding: 0 22px 0 70px;
 }
@@ -159,6 +160,7 @@ header h1 {
     display: flex;
     max-width: 1020px;
     margin: 0 auto;
+    position: relative;
 }
 
 .banner h1 {
@@ -203,10 +205,69 @@ header h1 {
     box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.75);
 }
 
+.banner .pla {
+    position: absolute;
+    top: 130px;
+    left: 240px;
+    background: rgb(245, 197, 6, 0.72) url(./assets/play.svg) no-repeat center;
+    width: 61px;
+    height: 61px;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+
+.spla {
+    position: absolute;
+    bottom: 22px;
+    left: 29px;
+    background: rgb(245, 197, 6, 0.37) url(./assets/smallplay.svg) no-repeat center;
+    width: 27px;
+    height: 27px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.loud {
+    position: absolute;
+    bottom: 24px;
+    left: 514px;
+    background: url(./assets/loud.svg) no-repeat center;
+    width: 27px;
+    height: 27px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.rang {
+    position: absolute;
+    bottom: 29px;
+    left: 79px;
+    -webkit-appearance: none;
+    width: 404px;
+    height: 12px;
+    border-radius: 5px;
+    background-color: rgb(245, 197, 6, 0.28);
+    outline: none;
+}
+
+.rang::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 178px;
+    height: 12px;
+    background-color: rgb(245, 197, 6);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .cover {
     object-fit: cover;
 }
 
+/*
 .banner video::-webkit-media-controls-play-button {
     background-color: #f5c506;
     width: 27px;
@@ -221,28 +282,18 @@ header h1 {
     border-radius: 5px;
     background-color: #f5c506;
     margin: 0 auto 29px auto;
-}
+}*/
 
 /***2**/
 
 .white {
     background: url(./assets/pattwh.png);
-    background-size: 7px 7px;
+    background-size: 6px 6px;
 }
 
 .white_inner {
-    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.5);
     height: 212px;
 }
-
-/*
-.white_inner:after{
-    content: "";
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
-}*/
 
 .white_inner ul {
     max-width: 1020px;
@@ -253,7 +304,6 @@ header h1 {
     letter-spacing: 0px;
     font-family: "Segoe UI";
     font-weight: 300;
-    /* justify-content: space-around;*/
 }
 
 .white ul li {
@@ -295,8 +345,6 @@ header h1 {
 .lorem_div {
     max-width: 1020px;
     margin: 0 auto;
-    /*display: flex;
-    justify-content: space-around;*/
 }
 
 .lorem_div h1 {
@@ -329,6 +377,7 @@ header h1 {
     width: 341px;
     height: 233px;
     position: relative;
+    overflow: hidden;
 }
 
 .text p {
@@ -349,13 +398,22 @@ header h1 {
     right: 14px;
 }
 
+.vid {
+    position: relative;
+}
+
 .vid video {
     width: 314px;
     height: 233px;
     -webkit-appearance: none;
-    position: relative;
 }
 
+.vid video[poster] {
+    object-fit: none;
+    object-position: -35px 0px;
+}
+
+/*
 .vid video::-webkit-media-controls-play-button {
     background-color: #f5c506;
     width: 61px;
@@ -367,6 +425,22 @@ header h1 {
 
 .vid video::-webkit-media-controls-timeline, .vid video::-webkit-media-controls-current-time-display, .vid video::-webkit-media-controls-fullscreen-button, .vid video::-webkit-media-controls-volume-control-container {
     display: none;
+}*/
+
+.con {
+    position: absolute;
+    top: 92px;
+    left: 129px;
+}
+
+.con .play {
+    background: rgb(245, 197, 6, 0.72) url(./assets/play.svg) no-repeat center;
+    width: 61px;
+    height: 61px;
+    border: 0;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
 }
 
 .twit {
@@ -386,6 +460,10 @@ header h1 {
     outline: none;
     bottom: 13px;
     right: 9px;
+}
+
+.sms {
+    display: none;
 }
 
 .plus input:active {
@@ -412,6 +490,10 @@ header h1 {
     background-color: #ddb101;
 }
 
+.mobile {
+    display: none;
+}
+
 .april {
     font-size: 51px;
     letter-spacing: 1px;
@@ -435,7 +517,7 @@ header h1 {
 .range {
     display: flex;
     justify-content: center;
-    margin-top: 128px;
+    margin-top: 42px;
 }
 
 .range input {
@@ -448,7 +530,7 @@ header h1 {
     outline: none;
 }
 
-input[type=range]::-webkit-slider-thumb {
+.range input::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 197px;
     height: 15px;
@@ -555,6 +637,7 @@ footer {
 footer section {
     max-width: 1020px;
     margin: 0 auto;
+    height: 100%;
 }
 
 .logo-foot {
@@ -565,7 +648,6 @@ footer section {
 .logo-foot img {
     width: 54px;
     height: 54px;
-    margin-top: 40;
 }
 
 footer section h1 {
@@ -581,7 +663,7 @@ footer section h1 {
 
 @media screen and (max-width: 640px) {
     .wrap {
-        width: 640px;
+        max-width: 640px;
     }
     header section {
         height: auto;
@@ -590,7 +672,8 @@ footer section h1 {
         width: 184px;
         height: 62px;
         margin-top: 0;
-        background-image: linear-gradient(0deg, #000000 0%, #41413f 100%);
+        justify-content: center;
+        background-image: linear-gradient(0deg, rgb(0, 0, 0, 0.45) 0%, #41413f 0%);
     }
     .logo img {
         width: 41px;
@@ -605,8 +688,22 @@ footer section h1 {
         height: 62px;
         align-items: center;
     }
-    .nav ul a, .logo h1 {
+    .nav ul a {
+        height: 62px;
+    }
+    .nav ul a li, .logo h1 {
         font-size: 19px;
+    }
+    .nav ul a li {
+        width: 90px;
+    }
+    .nav ul a:first-child {
+        background-position-x: 22px;
+        padding: 0 23px 0 58px;
+    }
+    .nav ul a:last-child {
+        background-position-x: 11px;
+        padding: 0 12px 0 52px;
     }
     .wrap {
         all: initial;
@@ -617,6 +714,21 @@ footer section h1 {
     }
     .wrap .banner video {
         width: 640px;
+        box-shadow: none;
+    }
+    .banner .pla {
+        position: absolute;
+        top: 130px;
+        left: 294px;
+    }
+    .banner .rang {
+        left: 133px;
+    }
+    .banner .spla {
+        left: 83px;
+    }
+    .banner .loud {
+        left: 568px;
     }
     .banner h1 {
         display: none;
@@ -632,6 +744,7 @@ footer section h1 {
     .white .white_inner .upper li {
         background-position-y: 28px;
         padding-bottom: 33px;
+        border: 0;
     }
     .white ul li:nth-child(1) {
         background-size: 90px 62px;
@@ -646,10 +759,10 @@ footer section h1 {
     .lorem {
         background: none;
     }
-    .lorem_div h1, .range, .date, .twit p, .twit .plus {
+    .lorem_div h1, .range, .date, .twit>p, .twit .plus {
         display: none;
     }
-    .lorem, .lorem_div .big0 {
+    .lorem, .lorem_div, .lorem_div .big0, .big {
         height: 485px;
     }
     .big {
@@ -678,13 +791,92 @@ footer section h1 {
         line-height: 33px;
     }
     .twit {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
         width: 647px;
         background-color: #f5c507;
-        background-position: 25% center;
+        background-position: 85px center;
+        position: relative;
+    }
+    .twit div {
+        margin: 0;
+    }
+    .twit .sms {
+        display: block;
+        width: 285px;
+        margin-right: -42.5%;
+        position: relative;
+    }
+    .sms img {
+        padding-bottom: 13px
+    }
+    .sms img:nth-child(3) {
+        opacity: 0.7;
+    }
+    .twit .sms img:nth-child(5) {
+        margin-bottom: 42px;
+        opacity: 0.6;
+    }
+    .twit .sms p {
+        font-size: 13px;
+        letter-spacing: 0px;
+        color: #8f8e8e;
+        font-family: "Arial";
+        margin: 0;
+        line-height: normal;
+        text-align: left;
+        position: absolute;
+        z-index: 2;
+        left: 28px;
+        top: 8px;
+    }
+    .twit .sms .p2 {
+        top: 68px;
+    }
+    .twit .sms .p3 {
+        top: 126px;
+    }
+    .mobile {
+        display: block;
+        height: 30px;
+        margin-right: 32px;
+        margin-bottom: 12px;
+    }
+    .mobile form {
+        width: 271px;
+        height: 28px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        display: flex;
+    }
+    .place {
+        width: 201px;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+        outline: none;
+        border: 0;
+        padding: 0;
+        box-shadow: 5px 5px 7px rgb(0, 0, 0, 0.11) inset;
+    }
+    .but {
+        background: #ec9e03 linear-gradient(0deg, rgb(0, 0, 0, 0.16) 0%, rgb(255, 255, 255, 0.16) 100%);
+        cursor: pointer;
+        width: 70px;
+        height: 100%;
+        font-size: 15px;
+        letter-spacing: 0px;
+        color: #ffffff;
+        font-family: "Arial";
+        border-radius: 0 10px 10px 0;
+        outline: none;
+        border: 0;
     }
     /*****/
     .grey {
         height: 487px;
+        background-image: none;
+        background-color: #474747;
     }
     .grey-div h1 {
         letter-spacing: 0px;
@@ -708,13 +900,15 @@ footer section h1 {
     }
     .grey-div .cir {
         left: 26px;
-        bottom: 278px;
+        top: 1158px;
     }
-    footer {
+    /*****/
+    footer, footer section {
         height: 44px;
     }
     .logo-foot {
         margin-left: 64px;
+        height: 100%;
     }
     .logo-foot img {
         width: 31px;

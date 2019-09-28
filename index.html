@@ -35,10 +35,15 @@
             </section>
         </header>
         <section class="banner">
-            <video poster="./assets/parr1.png" class="cover" controls>
-                <!--наложить с эффектом-->
+            <video poster="./assets/parr1.png" class="cover">
+
                 <p>Sorry, your browser doesn't support embedded videos</p>
             </video>
+
+            <input type="button" class="pla">
+            <input type="range" class="rang" value="0" min="0" max="100" step="1">
+            <input type="button" class="spla">
+            <input type="button" class="loud">
             <h1><span>The cool</span><br>The minimal</h1>
 
         </section>
@@ -76,15 +81,38 @@
                             <div class="plus"><input type="image" src="./assets/plus.svg"></<input>
                             </div>
                         </div>
-                        <div class="vid"><video poster="./assets/vid2.png" controls class="cover">Not supported</video>
+                        <div class="vid"><video poster="./assets/vid2.png">Not supported</video>
+                            <div class="con">
+                                <input type="button" name="f" class='play'>
+
+                            </div>
                         </div>
 
                         <div class="twit">
                             <p>22</p>
                             <div class="plus"><input type="image" src="./assets/plus.svg"></div>
                             </input>
+                            <div class="sms">
+
+                                <img src="./assets/sms2.png" alt="sms">
+                                <p>Daily Mobile UI Design Inspiration #1<br>
+                                    via @cssauthor</p>
+
+                                <img src="./assets/sms2.png" alt="sms">
+                                <p class="p2">Daily Mobile UI Design Inspiration #1<br>
+                                    via @cssauthor</p>
+                                <img src="./assets/sms2.png" alt="sms">
+                                <p class="p3">Daily Mobile UI Design Inspiration #1<br>
+                                    via @cssauthor</p>
+                            </div>
+                            <section class="mobile">
+                                <form>
+                                    <input type="search" class="place">
+                                    <input type="submit" class="but" value="Tweet">
+                                </form>
+                            </section>
                         </div>
-                        <!--убрать высоту?-->
+
 
                     </div>
                     <div class="date">
@@ -92,6 +120,7 @@
                         </p>
                     </div>
                 </div>
+
 
                 <div class="range">
                     <input type="range" value="30" min="0" max="100" step="1">
