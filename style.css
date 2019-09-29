@@ -27,20 +27,24 @@ header section {
 
 header h1 {
     margin-left: 8px;
+    margin-top: 8px;
     font-size: 41px;
     letter-spacing: 0px;
     color: #ffffff;
     font-family: "Lucida Sans";
     font-style: italic;
+    text-shadow: 1px 1.732px 0px rgba(0, 0, 0, 0.42);
 }
 
 .nav {
-    width: 456px;
+    width: 454px;
     height: 42px;
     margin-top: 70px;
 }
 
 .nav ul {
+    height: 42px;
+    margin-left: 2px;
     display: flex;
     background: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
     justify-content: space-around;
@@ -49,7 +53,7 @@ header h1 {
 
 .nav ul a {
     display: flex;
-    height: 50px;
+    height: 100%;
     align-items: center;
     justify-content: center;
     text-decoration: none;
@@ -73,24 +77,24 @@ header h1 {
 }
 
 .nav ul a:first-child {
-    background: url(../assets/man.svg) 20px no-repeat;
-    background-position-x: 39px;
+    background: url(./assets/man.svg) 20px no-repeat;
+    background-position: 39px 10px;
     border: 0;
     width: 172px;
     padding: 0 22px 0 70px;
 }
 
 .nav ul a:nth-child(2) {
-    background: url(../assets/key.svg) 20px no-repeat;
-    background-position-x: 13px;
+    background: url(./assets/key.svg) 20px no-repeat;
+    background-position: 13px 10px;
     width: 134px;
     padding-right: 18px;
     padding-left: 42px;
 }
 
 .nav ul a:last-child {
-    background: url(../assets/mail.svg) 20px no-repeat;
-    background-position-x: 16px;
+    background: url(./assets/mail.svg) 20px no-repeat;
+    background-position: 18px 10px;
     width: 150px;
     padding-right: 22px;
     padding-left: 49px;
@@ -171,8 +175,8 @@ header h1 {
     text-align: center;
     color: #ffffff;
     line-height: 1.2;
-    margin-top: 92px;
-    margin-left: 51px;
+    margin-top: 74px;
+    margin-left: 42px;
 }
 
 .banner span {
@@ -203,12 +207,13 @@ header h1 {
     width: 549px;
     height: 327px;
     box-shadow: 0px 0px 3px rgb(0, 0, 0, 0.75);
+    margin-left: 12px;
 }
 
 .banner .pla {
     position: absolute;
-    top: 130px;
-    left: 240px;
+    top: 134px;
+    left: 258px;
     background: rgb(245, 197, 6, 0.72) url(./assets/play.svg) no-repeat center;
     width: 61px;
     height: 61px;
@@ -221,7 +226,7 @@ header h1 {
 .spla {
     position: absolute;
     bottom: 22px;
-    left: 29px;
+    left: 42px;
     background: rgb(245, 197, 6, 0.37) url(./assets/smallplay.svg) no-repeat center;
     width: 27px;
     height: 27px;
@@ -232,8 +237,8 @@ header h1 {
 
 .loud {
     position: absolute;
-    bottom: 24px;
-    left: 514px;
+    bottom: 22px;
+    left: 520px;
     background: url(./assets/loud.svg) no-repeat center;
     width: 27px;
     height: 27px;
@@ -244,8 +249,8 @@ header h1 {
 
 .rang {
     position: absolute;
-    bottom: 29px;
-    left: 79px;
+    bottom: 28px;
+    left: 90px;
     -webkit-appearance: none;
     width: 404px;
     height: 12px;
@@ -318,18 +323,18 @@ header h1 {
 .white ul li:nth-child(1) {
     background: url(./assets/better.svg) no-repeat center;
     background-size: 110px 74px;
-    background-position-y: 60px;
+    background-position: 112px 60px;
 }
 
 .white ul li:nth-child(2) {
     background: url(./assets/cust.svg) no-repeat center;
-    background-position-y: 36px;
+    background-position: 134px 36px;
     background-size: 91px 95px;
 }
 
 .white ul li:nth-child(3) {
     background: url(./assets/its.svg) no-repeat center;
-    background-position-y: 53px;
+    background-position: 118px 53px;
     border-right: 1px solid rgb(0, 0, 0, 0.14);
     background-size: 82px 84px;
 }
@@ -353,12 +358,11 @@ header h1 {
     color: #ffffff;
     font-family: "PT Sans";
     font-weight: 400;
-    margin-top: 42px;
-    text-align: left;
+    margin-top: 38px;
 }
 
 .big {
-    margin-top: 40px;
+    margin-top: 36px;
     display: flex;
 }
 
@@ -387,7 +391,7 @@ header h1 {
     color: #ffffff;
     font-family: "Segoe WP";
     font-weight: 300;
-    padding: 25px 38px 34px 31px;
+    padding: 16px 38px 34px 31px;
     overflow-wrap: break-word;
 }
 
@@ -430,7 +434,7 @@ header h1 {
 .con {
     position: absolute;
     top: 92px;
-    left: 129px;
+    left: 132px;
 }
 
 .con .play {
@@ -444,7 +448,7 @@ header h1 {
 }
 
 .twit {
-    background: #ec9e03 url(./assets/twitter.svg) no-repeat center;
+    background: #ec9e03 url(./assets/twitter.svg) no-repeat center 56px;
     width: 329px;
     height: 233px;
     margin-left: auto;
@@ -502,7 +506,8 @@ header h1 {
     font-family: "Segoe UI";
     font-weight: bold;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 12px;
+    padding-left: 10px;
 }
 
 .april2 {
@@ -512,12 +517,13 @@ header h1 {
     color: #b26529;
     font-family: "Segoe UI";
     text-align: center;
+    padding-left: 10px;
 }
 
 .range {
     display: flex;
     justify-content: center;
-    margin-top: 42px;
+    margin-top: 40px;
 }
 
 .range input {
@@ -528,6 +534,7 @@ header h1 {
     background-color: #ffffff;
     opacity: 0.48;
     outline: none;
+    margin-left: 28px;
 }
 
 .range input::-webkit-slider-thumb {
@@ -567,12 +574,12 @@ header h1 {
     font-family: "PT Sans";
     font-weight: 400;
     text-align: center;
-    margin-top: 48px;
+    margin-top: 40px;
 }
 
 .grey figure {
-    margin-left: 18px;
-    margin-top: 57px;
+    margin-left: 20px;
+    margin-top: 54px;
 }
 
 .grey figure img {
@@ -581,13 +588,13 @@ header h1 {
 
 .grey figure img:nth-child(2) {
     position: absolute;
-    top: 99px;
+    top: 96px;
 }
 
 .grey figure img:nth-child(3) {
     position: absolute;
     top: 209px;
-    left: 520px;
+    left: 524px;
 }
 
 .grey-div .cir {
@@ -611,7 +618,8 @@ header h1 {
 
 .grey-div ul {
     width: 384px;
-    margin-top: 107px;
+    margin-top: 98px;
+    margin-right: -94px;
 }
 
 .grey-div ul li {
@@ -657,6 +665,7 @@ footer section h1 {
     font-family: "Lucida Sans";
     font-style: italic;
     text-align: center;
+    text-shadow: 1px 1.732px 0px rgba(0, 0, 0, 0.42);
 }
 
 /*****media*****/
@@ -669,7 +678,7 @@ footer section h1 {
         height: auto;
     }
     .logo {
-        width: 184px;
+        width: 186px;
         height: 62px;
         margin-top: 0;
         justify-content: center;
@@ -682,11 +691,13 @@ footer section h1 {
     .nav {
         margin-top: 0;
         height: auto;
+        width: 456px;
     }
     .nav ul {
         box-shadow: none;
         height: 62px;
         align-items: center;
+        margin: 0;
     }
     .nav ul a {
         height: 62px;
@@ -694,16 +705,19 @@ footer section h1 {
     .nav ul a li, .logo h1 {
         font-size: 19px;
     }
-    .nav ul a li {
-        width: 90px;
-    }
     .nav ul a:first-child {
-        background-position-x: 22px;
-        padding: 0 23px 0 58px;
+        background-position: 24px 19px;
+        padding: 0 16px 0 58px;
+        width: 170px;
+    }
+    .nav ul a:nth-child(2) {
+        background-position: 14px 20px;
+        width: 132px;
     }
     .nav ul a:last-child {
-        background-position-x: 11px;
+        background-position: 11px 20px;
         padding: 0 12px 0 52px;
+        width: 149px;
     }
     .wrap {
         all: initial;
@@ -715,11 +729,12 @@ footer section h1 {
     .wrap .banner video {
         width: 640px;
         box-shadow: none;
+        margin: 0;
     }
     .banner .pla {
         position: absolute;
-        top: 130px;
-        left: 294px;
+        top: 132px;
+        left: 298px;
     }
     .banner .rang {
         left: 133px;
@@ -728,7 +743,7 @@ footer section h1 {
         left: 83px;
     }
     .banner .loud {
-        left: 568px;
+        left: 562px;
     }
     .banner h1 {
         display: none;
@@ -737,23 +752,40 @@ footer section h1 {
         display: none;
     }
     /********/
+    .white ul li {
+        justify-content: unset;
+    }
     .white_inner, .white_inner ul {
         height: 174px;
         font-size: 23px;
     }
     .white .white_inner .upper li {
-        background-position-y: 28px;
+        background-position: 42px 34px;
         padding-bottom: 33px;
         border: 0;
     }
     .white ul li:nth-child(1) {
         background-size: 90px 62px;
     }
-    .white ul li:nth-child(2) {
-        background-size: 67px 70px;
+    .white ul li:nth-child(1) p {
+        margin-left: 16px;
+        margin-bottom: 2px;
     }
-    .white ul li:nth-child(3) {
+    .white ul li:nth-child(2) p {
+        margin-left: 56px;
+        margin-bottom: 2px;
+    }
+    .white ul li:nth-child(3) p {
+        margin-left: 66px;
+        margin-bottom: 2px;
+    }
+    .white .white_inner .upper li:nth-child(2) {
+        background-size: 67px 70px;
+        background-position: 78px 30px;
+    }
+    .white .white_inner .upper li:nth-child(3) {
         background-size: 69px 70px;
+        background-position: 68px 30px;
     }
     /*****/
     .lorem {
@@ -766,29 +798,30 @@ footer section h1 {
         height: 485px;
     }
     .big {
-        margin-top: 0;
+        margin-top: -2px;
         flex-wrap: wrap;
     }
     .text {
         width: 299px;
         height: 232px;
         margin: 9px;
-        margin-top: 11px;
         margin-right: 4.5px;
     }
     .big .vid {
         width: 299px;
-        margin: 9px;
-        margin-top: 11px;
+        margin-top: 10px;
         margin-left: 4.5px;
     }
     .text div input {
         right: 12px;
-        bottom: 18px;
+        bottom: 16px;
     }
     .text p {
-        padding: 22px 38px 21px 26px;
+        padding: 18px 38px 21px 26px;
         line-height: 33px;
+    }
+    .con {
+        left: 130px;
     }
     .twit {
         display: flex;
@@ -796,7 +829,7 @@ footer section h1 {
         justify-content: flex-end;
         width: 647px;
         background-color: #f5c507;
-        background-position: 85px center;
+        background-position: 82px 58px;
         position: relative;
     }
     .twit div {
@@ -809,7 +842,7 @@ footer section h1 {
         position: relative;
     }
     .sms img {
-        padding-bottom: 13px
+        padding-bottom: 10px
     }
     .sms img:nth-child(3) {
         opacity: 0.7;
@@ -828,20 +861,20 @@ footer section h1 {
         text-align: left;
         position: absolute;
         z-index: 2;
-        left: 28px;
+        left: 30px;
         top: 8px;
     }
     .twit .sms .p2 {
-        top: 68px;
+        top: 62px;
     }
     .twit .sms .p3 {
-        top: 126px;
+        top: 118px;
     }
     .mobile {
         display: block;
         height: 30px;
         margin-right: 32px;
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
     .mobile form {
         width: 271px;
@@ -874,7 +907,7 @@ footer section h1 {
     }
     /*****/
     .grey {
-        height: 487px;
+        height: 466px;
         background-image: none;
         background-color: #474747;
     }
@@ -882,7 +915,9 @@ footer section h1 {
         letter-spacing: 0px;
         font-family: "Open Sans";
         font-size: 39px;
-        margin-top: 43px;
+        margin-top: 34px;
+        text-align: initial;
+        margin-left: 16px;
     }
     .grey-div ul {
         display: none;
@@ -900,14 +935,14 @@ footer section h1 {
     }
     .grey-div .cir {
         left: 26px;
-        top: 1158px;
+        top: 1160px;
     }
     /*****/
     footer, footer section {
         height: 44px;
     }
     .logo-foot {
-        margin-left: 64px;
+        margin-left: 72px;
         height: 100%;
     }
     .logo-foot img {
